@@ -10,78 +10,74 @@ import submarine from '../images/experience/submarine.png'
 class Experience extends Component {
   render() {
     return (
-      <section id="portfolio">
+      <section className="portfolio" id="portfolio">
         <div className="container">
-            <div className="row">
-                <div className="col-lg-12 text-center">
-                    <h2>Experience</h2>
-                    <hr className="star-primary" />
+          <h2 className="text-center text-uppercase text-secondary mb-0">Experience</h2>
+          <hr className="star-dark mb-5" />
+          <div className="row">
+            <div className="col-md-6 col-lg-4">
+              <a className="portfolio-item d-block mx-auto" href="#portfolio-modal-1">
+                <div className="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                  <div className="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                    <i className="fa fa-search-plus fa-3x"></i>
+                  </div>
                 </div>
+                <img className="img-fluid" src={cabin} alt="" />
+              </a>
             </div>
-            <div className="row">
-                <div className="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal1" className="portfolio-link" data-toggle="modal">
-                        <div className="caption">
-                            <div className="caption-content">
-                                <i className="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src={cabin} className="img-responsive" alt="" />
-                    </a>
+            <div className="col-md-6 col-lg-4">
+              <a className="portfolio-item d-block mx-auto" href="#portfolio-modal-2">
+                <div className="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                  <div className="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                    <i className="fa fa-search-plus fa-3x"></i>
+                  </div>
                 </div>
-                <div className="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal2" className="portfolio-link" data-toggle="modal">
-                        <div className="caption">
-                            <div className="caption-content">
-                                <i className="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src={cake} className="img-responsive" alt="" />
-                    </a>
-                </div>
-                <div className="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal3" className="portfolio-link" data-toggle="modal">
-                        <div className="caption">
-                            <div className="caption-content">
-                                <i className="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src={circus} className="img-responsive" alt="" />
-                    </a>
-                </div>
-                <div className="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal4" className="portfolio-link" data-toggle="modal">
-                        <div className="caption">
-                            <div className="caption-content">
-                                <i className="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src={game} className="img-responsive" alt="" />
-                    </a>
-                </div>
-                <div className="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal5" className="portfolio-link" data-toggle="modal">
-                        <div className="caption">
-                            <div className="caption-content">
-                                <i className="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src={safe} className="img-responsive" alt="" />
-                    </a>
-                </div>
-                <div className="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal6" className="portfolio-link" data-toggle="modal">
-                        <div className="caption">
-                            <div className="caption-content">
-                                <i className="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src={submarine} className="img-responsive" alt="" />
-                    </a>
-                </div>
+                <img className="img-fluid" src={cake} alt="" />
+              </a>
             </div>
+            <div className="col-md-6 col-lg-4">
+              <a className="portfolio-item d-block mx-auto" href="#portfolio-modal-3">
+                <div className="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                  <div className="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                    <i className="fa fa-search-plus fa-3x"></i>
+                  </div>
+                </div>
+                <img className="img-fluid" src={circus} alt="" />
+              </a>
+            </div>
+            <div className="col-md-6 col-lg-4">
+              <a className="portfolio-item d-block mx-auto" href="#portfolio-modal-4">
+                <div className="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                  <div className="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                    <i className="fa fa-search-plus fa-3x"></i>
+                  </div>
+                </div>
+                <img className="img-fluid" src={game} alt="" />
+              </a>
+            </div>
+            <div className="col-md-6 col-lg-4">
+              <a className="portfolio-item d-block mx-auto" href="#portfolio-modal-5">
+                <div className="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                  <div className="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                    <i className="fa fa-search-plus fa-3x"></i>
+                  </div>
+                </div>
+                <img className="img-fluid" src={safe} alt="" />
+              </a>
+            </div>
+            <div className="col-md-6 col-lg-4">
+              <a className="portfolio-item d-block mx-auto" href="#portfolio-modal-6">
+                <div className="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                  <div className="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                    <i className="fa fa-search-plus fa-3x"></i>
+                  </div>
+                </div>
+                <img className="img-fluid" src={submarine} alt="" />
+              </a>
+            </div>
+          </div>
         </div>
-    </section>
+      </section>
     );
   }
 }
