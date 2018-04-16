@@ -5,8 +5,8 @@ import profile from '../images/profile.png'
 class Header extends Component {
   render() {
     return (
-      <header className="masthead bg-primary text-white text-center">
-        <div className="container">
+      <header className="resume-section masthead bg-primary text-white text-center d-flex">
+        <div className="container my-auto">
           <img className="img-fluid mb-5 d-block mx-auto" src={profile} alt="" />
           <h1 className="text-uppercase mb-0">Ray Zhou</h1>
           <hr className="star-light" />

@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
+import { scroller } from 'react-scroll'
 import './Navigation.css';
 
 const NavItem = props => {
-  const isActive = props.active ? " active " : " ";
+  const isActive = props.active === props.name ? " active " : " ";
   return (
     <li className="nav-item  mx-0 mx-lg-1">
-      <a className={"nav-link" + isActive + "py-3 px-0 px-lg-3 rounded"} href={props.path}>{props.name}</a>
+        <a className={"nav-link" + isActive + "py-3 px-0 px-lg-3 rounded"} onClick={props.onClick} href={props.path}>{props.name}</a>
     </li>
   );
 }
@@ -22,30 +23,26 @@ const TogglerButton = props => {
 }
 
 class Navigation extends Component {
-  constructor(props){
-    super(props);
-    this.state = {
-      isShown: true
-    };
-  }
-
-  handleClick = () => {
-      this.setState(prevState => ({
-        isShown: !prevState.isShown
-      }));
+  handleNavItemClick = element => event => {
+    scroller.scrollTo(element, {
+      duration: 300,
+      smooth: 'linear',
+      spy: true
+    });
   }
 
   render() {
-    const dropDownShow = this.state.isShown ? " collapse" : "";
+    const menuShow = this.props.menuShow ? "" : " collapse";
+    const barShrink = this.props.barShrink ? " navbar-shrink" : "";
     return (
-      <nav className="navbar navbar-expand-lg bg-secondary fixed-top text-uppercase" id="mainNav">
+      <nav className={"navbar navbar-expand-lg bg-secondary fixed-top text-uppercase" + barShrink} id="mainNav">
         <div className="container">
-          <a className="navbar-brand" href="#page-top">Ray Zhou</a>
-          <TogglerButton onClick={this.handleClick}/>
-          <div className={"navbar-collapse" + dropDownShow} id="navbarResponsive">
+          <a className="navbar-brand" href="#page-top" onClick={this.handleNavItemClick("Header")}>Ray Zhou</a>
+          <TogglerButton onClick={this.props.onMenuClick}/>
+          <div className={"navbar-collapse" + menuShow} id="navbarResponsive">
             <ul className="navbar-nav ml-auto">
-              <NavItem path="#experience" active={true} name="Experience" />
-              <NavItem path="#skills" name="Skills" />
+              <NavItem path="#experience" active={this.props.ActiveNavItem} name="Experience" onClick={this.handleNavItemClick("Experience")} />
+              <NavItem path="#skills" active={this.props.ActiveNavItem} name="Skills" onClick={this.handleNavItemClick("Skills")} />
               <NavItem path="#resume" name="Resume" />
             </ul>
           </div>

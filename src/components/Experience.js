@@ -10,8 +10,8 @@ import submarine from '../images/experience/submarine.png'
 class Experience extends Component {
   render() {
     return (
-      <section className="portfolio" id="portfolio">
-        <div className="container">
+      <section className="resume-section portfolio d-flex" id="portfolio">
+        <div ref={this.props.innerRef} className="container my-auto">
           <h2 className="text-center text-uppercase text-secondary mb-0">Experience</h2>
           <hr className="star-dark mb-5" />
           <div className="row">

@@ -3,8 +3,8 @@ import React, { Component } from 'react';
 class Skills extends Component {
   render() {
     return (
-      <section className="bg-primary text-white mb-0" id="about">
-          <div className="container">
+      <section className="resume-section bg-primary text-white d-flex" id="about">
+          <div ref={this.props.innerRef} className="container my-auto">
             <h2 className="text-center text-uppercase text-white">Skills</h2>
             <hr className="star-light mb-5"/>
             <div className="row">
@@ -16,7 +16,7 @@ class Skills extends Component {
               </div>
             </div>
             <div className="text-center mt-4">
-              <a className="btn btn-xl btn-outline-light" href="#">
+              <a className="btn btn-xl btn-outline-light" href="#download">
                 <i className="fa fa-download mr-2"></i>
                 Download Now!
               </a>

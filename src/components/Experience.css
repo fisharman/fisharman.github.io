@@ -1,5 +1,5 @@
 .portfolio {
-  margin-bottom: -15px;
+  margin-bottom: 0px;
 }
 
 .portfolio .portfolio-item {
@@ -27,7 +27,7 @@
 
 @media (min-width: 576px) {
   .portfolio {
-    margin-bottom: -30px;
+    margin-bottom: 0px;
   }
   .portfolio .portfolio-item {
     margin-bottom: 30px;
