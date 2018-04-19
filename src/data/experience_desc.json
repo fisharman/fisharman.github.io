@@ -6,8 +6,9 @@
       "image": "flair",
       "content" : {
         "website" : "http://flair.co",
-        "company" : "Venture funded IoT thermostat & vent producer",
-        "role": "Full-stack development, including implementing elements for the support dashboard used to display customer data."
+        "company" : "Venture Capital funded IoT thermostat & vent producer",
+        "role": "I was a full-stack developer and also implemented front-end elements for a customer support dashboard (React, Node.js)."
+         "highlight": "I reduced queries duration by 50%-500% (SQLAlchemy/postgreSQL)"
       }
     },
     {
@@ -17,7 +18,8 @@
       "content" : {
         "website" : "http://nextthing.co",
         "company" : "Maker of the world's first $9 embedded computer",
-        "Role" : "Implemented automated scripts that tested tens of thousands of "
+        "Role" : "I implemented automated Python scripts that tested 100k units of C.H.I.P and subseqent succeesors (IoT devices)"
+        "highlight": "My automated script reduced total testing time by 4,583 man-hours compared to no automation previously."
       }
     },
     {
@@ -26,16 +28,17 @@
       "image": "palette",
       "content" : {
         "website": "http://palettegear.com",
-        "company": "Modular computer input device maker",
-        "Description" : ""
+        "company": "Modular computer input device maker for personalized control of any software.",
+        "Role" : "I was a Co-founder and firmware engineer. I co-developed the firmware and hardware. and implemented processeses for mass production and testing (Python).",
+        "highlight": "I developed and shipped product to 10k customers.  "
       }
     },
     {
-      "name": "Sentry Scientific",
-      "type": "Product Development",
-      "image": "flair",
+      "name": "Salary Predictor",
+      "type": "Data Science",
+      "image": "Salary",
       "content" : {
-        "Description":
+        "highlight": "Built Machine learning models to predict future salaries based on job listing content (Python/Scikit-learn)."
       }
     },
     {
@@ -43,7 +46,8 @@
       "type": "Full-Stack Web",
       "image": "screenshot",
       "content" : {
-        "Description":
+        "website": "http://brp2018.online/",
+        "highlight": "Delivered reading plans from databse, based on selected dates to 2000 users",
       }
     },
     {
@@ -51,7 +55,7 @@
       "type": "Android",
       "image": "screenshot",
       "content" : {
-        "Description":
+        "highlight": "Enables multiple conditions search of a user’s social media content, supported by Instagram’s REST API",
       }
     }
 
