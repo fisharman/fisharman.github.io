@@ -1,0 +1,87 @@
+{
+  "data" : [
+    {
+      "name": "Flair",
+      "type": "Full-Stack Web",
+      "image": "flair",
+      "content" : {
+        "website" : "http://flair.co",
+        "company" : "Venture funded IoT thermostat & vent producer",
+        "role": "Full-stack development, including implementing elements for the support dashboard used to display customer data."
+      }
+    },
+    {
+      "name": "Next Thing Co.",
+      "type": "Product Design/Test (IoT)",
+      "image": "ntc-chip",
+      "content" : {
+        "website" : "http://nextthing.co",
+        "company" : "Maker of the world's first $9 embedded computer",
+        "Role" : "Implemented automated scripts that tested tens of thousands of "
+      }
+    },
+    {
+      "name": "Palette Gear",
+      "type": "Hardware/Firmware",
+      "image": "palette",
+      "content" : {
+        "website": "http://palettegear.com",
+        "company": "Modular computer input device maker",
+        "Description" : ""
+      }
+    },
+    {
+      "name": "Sentry Scientific",
+      "type": "Product Development",
+      "image": "flair",
+      "content" : {
+        "Description":
+      }
+    },
+    {
+      "name": "Book Viewer",
+      "type": "Full-Stack Web",
+      "image": "screenshot",
+      "content" : {
+        "Description":
+      }
+    },
+    {
+      "name": "Insta Search",
+      "type": "Android",
+      "image": "screenshot",
+      "content" : {
+        "Description":
+      }
+    }
+
+  ],
+
+
+  "firstName": "John",
+  "lastName": "Smith",
+  "isAlive": true,
+  "age": 27,
+  "address": {
+    "streetAddress": "21 2nd Street",
+    "city": "New York",
+    "state": "NY",
+    "postalCode": "10021-3100"
+  },
+  "phoneNumbers": [
+    {
+      "type": "home",
+      "number": "212 555-1234"
+    },
+    {
+      "type": "office",
+      "number": "646 555-4567"
+    },
+    {
+      "type": "mobile",
+      "number": "123 456-7890"
+    }
+  ],
+  "children": [],
+  "spouse": null
+}
