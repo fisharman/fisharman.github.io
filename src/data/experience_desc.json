@@ -1,91 +1,66 @@
-{
-  "data" : [
-    {
-      "name": "Flair",
-      "type": "Full-Stack Web",
-      "image": "flair",
-      "content" : {
-        "website" : "http://flair.co",
-        "company" : "Venture Capital funded IoT thermostat & vent producer",
-        "role": "I was a full-stack developer and also implemented front-end elements for a customer support dashboard (React, Node.js)."
-         "highlight": "I reduced queries duration by 50%-500% (SQLAlchemy/postgreSQL)"
-      }
-    },
-    {
-      "name": "Next Thing Co.",
-      "type": "Product Design/Test (IoT)",
-      "image": "ntc-chip",
-      "content" : {
-        "website" : "http://nextthing.co",
-        "company" : "Maker of the world's first $9 embedded computer",
-        "Role" : "I implemented automated Python scripts that tested 100k units of C.H.I.P and subseqent succeesors (IoT devices)"
-        "highlight": "My automated script reduced total testing time by 4,583 man-hours compared to no automation previously."
-      }
-    },
-    {
-      "name": "Palette Gear",
-      "type": "Hardware/Firmware",
-      "image": "palette",
-      "content" : {
-        "website": "http://palettegear.com",
-        "company": "Modular computer input device maker for personalized control of any software.",
-        "Role" : "I was a Co-founder and firmware engineer. I co-developed the firmware and hardware. and implemented processeses for mass production and testing (Python).",
-        "highlight": "I developed and shipped product to 10k customers.  "
-      }
-    },
-    {
-      "name": "Salary Predictor",
-      "type": "Data Science",
-      "image": "Salary",
-      "content" : {
-        "highlight": "Built Machine learning models to predict future salaries based on job listing content (Python/Scikit-learn)."
-      }
-    },
-    {
-      "name": "Book Viewer",
-      "type": "Full-Stack Web",
-      "image": "screenshot",
-      "content" : {
-        "website": "http://brp2018.online/",
-        "highlight": "Delivered reading plans from databse, based on selected dates to 2000 users",
-      }
-    },
-    {
-      "name": "Insta Search",
-      "type": "Android",
-      "image": "screenshot",
-      "content" : {
-        "highlight": "Enables multiple conditions search of a user’s social media content, supported by Instagram’s REST API",
-      }
+[
+  {
+    "name": "Flair",
+    "type": "Full-Stack Web",
+    "image": "flairCaption",
+    "content" : {
+      "image" : "flairModal",
+      "website" : "http://flair.co",
+      "company" : "Venture Capital funded IoT thermostat & vent producer",
+      "role": "I was a full-stack developer. I implemented front-end elements for a customer support dashboard.",
+      "highlight": "I reduced SQL queries duration by 50%-500%."
     }
-
-  ],
-
-
-  "firstName": "John",
-  "lastName": "Smith",
-  "isAlive": true,
-  "age": 27,
-  "address": {
-    "streetAddress": "21 2nd Street",
-    "city": "New York",
-    "state": "NY",
-    "postalCode": "10021-3100"
   },
-  "phoneNumbers": [
-    {
-      "type": "home",
-      "number": "212 555-1234"
-    },
-    {
-      "type": "office",
-      "number": "646 555-4567"
-    },
-    {
-      "type": "mobile",
-      "number": "123 456-7890"
+  {
+    "name": "Next Thing Co.",
+    "type": "IoT Hardware Design/Test",
+    "image": "ntcCaption",
+    "content" : {
+      "image" : "ntcModal",
+      "website" : "http://nextthing.co",
+      "company" : "Maker of the world's first $9 internet connected embedded computer",
+      "role" : "I implemented automated Python scripts that tested 100k units of C.H.I.P V1 and subseqent versions.",
+      "highlight": "My automated script reduced total testing time by 4,583 man-hours compared to no automation previously."
     }
-  ],
-  "children": [],
-  "spouse": null
-}
+  },
+  {
+    "name": "Palette Gear",
+    "type": "Hardware Design/Firmware",
+    "image": "paletteCaption",
+    "content" : {
+      "image" : "paletteModal",
+      "website": "http://palettegear.com",
+      "company": "Modular computer input device maker for personalized control of any software.",
+      "role" : "I was a co-founder and firmware engineer. I co-developed the firmware and hardware and implemented processeses for mass production and testing.",
+      "highlight": "I developed and shipped a product from scratch to 10k customers."
+    }
+  },
+  {
+    "name": "Book Viewer",
+    "type": "Full-Stack Web",
+    "image": "bookviewerCaption",
+    "content" : {
+      "image" : "bookviewerModal",
+      "website": "http://brp2018.online/",
+      "highlight": "Delivered reading materials based on dates from a database to 2000 users."
+    }
+  },
+  {
+    "name": "Salary Predictor",
+    "type": "Data Science",
+    "image": "salarypredictorCaption",
+    "content" : {
+      "image" : "salarypredictorCaption",
+      "highlight": "Built Machine learning models to predict future salaries from analyzing job listing content."
+    }
+  },
+  {
+    "name": "Insta Search",
+    "type": "Mobile (Android)",
+    "image": "instasearchCaption",
+    "content" : {
+      "image" : "instasearchModal",
+      "highlight": "Enabled multiple conditions search of a user’s social media content, supported by Instagram’s REST API."
+    }
+  }
+]
