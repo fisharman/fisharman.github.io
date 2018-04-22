@@ -7,6 +7,7 @@ import Header from './components/Header';
 import Skills from './components/Skills';
 import Experience from './components/Experience';
 import Footer from './components/Footer';
+import ReactGA from 'react-ga';
 
 class App extends Component {
   constructor(props){
@@ -18,7 +19,16 @@ class App extends Component {
     };
   }
 
+  componentDidMount() {
+    window.addEventListener('scroll', this.handleMenuCollapse);
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener('scroll', this.handleMenuCollapse);
+  }
+
   setNavItemActive = item => event => {
+    ReactGA.ga('send', 'pageview', item);
     this.setState({
       ActiveNavItem: item,
       menuShow: false
@@ -34,11 +44,11 @@ class App extends Component {
 
   handleMenuClick = () => {
       this.setState(prevState => ({
-        menuShow: !prevState.isShown
+        menuShow: !prevState.menuShow
       }));
   }
 
-  closeMenu = () => {
+  handleMenuCollapse = () => {
     this.setState(prevState => ({
       menuShow: false
     }));
@@ -52,11 +62,7 @@ class App extends Component {
 
   render() {
     return (
-      <div className="App">
-        <Waypoint
-          scrollableAncestor={window}
-          onPositionChange={this.closeMenu}
-        />
+      <div className="App" onScroll={this.handleMenuCollapse}>
         <Navigation ActiveNavItem={this.state.ActiveNavItem}
                     onMenuClick={this.handleMenuClick}
                     menuShow={this.state.menuShow}
