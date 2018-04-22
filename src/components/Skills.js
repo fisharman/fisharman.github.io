@@ -1,26 +1,45 @@
 import React, { Component } from 'react';
+import './Skills.css'
+
+const InlineIcon = props => {
+  return (
+    <li className="list-inline-item">
+      <i className={props.icon} title={props.iconTitle}></i>
+    </li>
+  )
+}
 
 class Skills extends Component {
   render() {
     return (
       <section className="resume-section bg-primary text-white d-flex" id="about">
-          <div ref={this.props.innerRef} className="container my-auto">
+          <div className="container my-auto">
             <h2 className="text-center text-uppercase text-white">Skills</h2>
             <hr className="star-light mb-5"/>
-            <div className="row">
-              <div className="col-lg-4 ml-auto">
-                <p className="lead">Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional LESS stylesheets for easy customization.</p>
-              </div>
-              <div className="col-lg-4 mr-auto">
-                <p className="lead">Whether you're a student looking to showcase your work, a professional looking to attract clients, or a graphic artist looking to share your projects, this template is the perfect starting point!</p>
-              </div>
-            </div>
-            <div className="text-center mt-4">
-              <a className="btn btn-xl btn-outline-light" href="#download">
-                <i className="fa fa-download mr-2"></i>
-                Download Now!
-              </a>
-            </div>
+            <div className="subheading text-center mb-3">Front End</div>
+            <ul className="list-inline list-icons text-center">
+              <InlineIcon icon="devicon-javascript-plain" iconTitle="JavaScript" />
+              <InlineIcon icon="devicon-react-original-wordmark" iconTitle="React" />
+              <InlineIcon icon="devicon-bootstrap-plain" iconTitle="Bootstrap" />
+              <InlineIcon icon="devicon-html5-plain" iconTitle="HTML 5" />
+              <InlineIcon icon="devicon-css3-plain" iconTitle="CSS 3" />
+            </ul>
+            <div className="subheading text-center mb-3">Back End</div>
+            <ul className="list-inline list-icons text-center">
+              <InlineIcon icon="devicon-python-plain-wordmark" iconTitle="Python" />
+              <InlineIcon icon="devicon-django-plain-wordmark" iconTitle="Django" />
+              <InlineIcon icon="devicon-java-plain" iconTitle="Java" />
+              <InlineIcon icon="devicon-postgresql-plain-wordmark" iconTitle="PostgreSQL" />
+              <InlineIcon icon="devicon-nodejs-plain-wordmark" iconTitle="Node.js" />
+              <InlineIcon icon="devicon-c-plain-wordmark" iconTitle="C" />
+            </ul>
+            <div className="subheading text-center mb-3">Tools</div>
+            <ul className="list-inline list-icons text-center">
+              <InlineIcon icon="devicon-amazonwebservices-plain" iconTitle="AWS" />
+              <InlineIcon icon="devicon-pycharm-plain" iconTitle="PyCharm" />
+              <InlineIcon icon="devicon-intellij-plain" iconTitle="IntelliJ" />
+              <InlineIcon icon="devicon-atom-original-wordmark" iconTitle="Atom" />
+            </ul>
           </div>
       </section>
     );
