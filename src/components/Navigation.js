@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { scroller } from 'react-scroll'
 import './Navigation.css';
-import resume from '../data/RayZhou_CV_Web.pdf'
+import resume from '../data/RayZhou_ResumeW.pdf'
 import ReactGA from 'react-ga';
 
 const NavItem = props => {
