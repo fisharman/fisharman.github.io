@@ -1,19 +1,19 @@
 {
   "main.css": "static/css/main.b5e78427.css",
   "main.css.map": "static/css/main.b5e78427.css.map",
-  "main.js": "static/js/main.683e4524.js",
-  "main.js.map": "static/js/main.683e4524.js.map",
+  "main.js": "static/js/main.0e89bfa6.js",
+  "main.js.map": "static/js/main.0e89bfa6.js.map",
   "static/media/RayZhou_ResumeW.pdf": "static/media/RayZhou_ResumeW.90debf76.pdf",
   "static/media/bookviewerCaption.jpg": "static/media/bookviewerCaption.74a9aa04.jpg",
   "static/media/bookviewerModal.png": "static/media/bookviewerModal.1020309a.png",
-  "static/media/flairCaption.png": "static/media/flairCaption.ba44ae3a.png",
+  "static/media/flairCaption.jpg": "static/media/flairCaption.26c992e1.jpg",
   "static/media/flairModal.jpg": "static/media/flairModal.5172d371.jpg",
-  "static/media/instasearchCaption.jpg": "static/media/instasearchCaption.be55eaa1.jpg",
-  "static/media/instasearchModal.jpg": "static/media/instasearchModal.7d556100.jpg",
-  "static/media/ntcCaption.jpg": "static/media/ntcCaption.25e843ce.jpg",
+  "static/media/instasearchCaption.jpg": "static/media/instasearchCaption.46fd61c9.jpg",
+  "static/media/instasearchModal.jpg": "static/media/instasearchModal.a6412f05.jpg",
+  "static/media/ntcCaption.jpg": "static/media/ntcCaption.6326d9b5.jpg",
   "static/media/ntcModal.jpg": "static/media/ntcModal.f6c448b1.jpg",
   "static/media/paletteCaption.jpg": "static/media/paletteCaption.5027b856.jpg",
-  "static/media/paletteModal.png": "static/media/paletteModal.e8342407.png",
+  "static/media/paletteModal.jpg": "static/media/paletteModal.c5f2f1ec.jpg",
   "static/media/profile.JPG": "static/media/profile.78054342.JPG",
-  "static/media/salarypredictorCaption.png": "static/media/salarypredictorCaption.3327a509.png"
+  "static/media/salarypredictorCaption.jpg": "static/media/salarypredictorCaption.21249133.jpg"
 }
